@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Change Warna</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        #color_area {
+            height: 500px;
+            background-color: rgb(28, 29, 31);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <div class="row mb-3">
+            <div class="col" id="color_area">
+            </div>
+        </div>
+
+        <div class="row mt-3 text-center">
+            <div class="col d-grid">
+                <button type="button" class="btn btn-danger" onclick="merah()">Merah</button>
+            </div>
+            <div class="col d-grid">
+                <button type="button" class="btn btn-primary" onclick="biru()">Biru</button>
+            </div>
+            <div class="col d-grid">
+                <button type="button" class="btn btn-success" onclick="hijau()">Hijau</button>
+            </div>
+            <div class="col d-grid">
+                <button type="button" class="btn btn-warning" onclick="kuning()">Kuning</button>
+            </div>
+            <div class="col d-grid">
+                <button type="button" class="btn" style="background-color: pink;" onclick="pink()">Pink</button>
+            </div>
+        </div>
+        <div class="alert alert-info text-center mt-5" role="alert">
+            Aurel Ferdinan Pradinta | 25/568915/SV/27561 | PGWEB Acara 3
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+        
+    <script>
+        // Function mengubah warna menjadi merah
+        function merah() {
+            document.getElementById("color_area").style.backgroundColor = "red";
+        }
+
+        // Function mengubah warna menjadi biru
+        function biru() {
+            document.getElementById("color_area").style.backgroundColor = "blue";
+        }
+
+        // Function mengubah warna menjadi hijau
+        function hijau() {
+            document.getElementById("color_area").style.backgroundColor = "green";
+        }
+
+        // Function mengubah warna menjadi kuning
+        function kuning() {
+            document.getElementById("color_area").style.backgroundColor = "yellow";
+        }
+
+        // Function mengubah warna menjadi pink
+        function pink() {
+            document.getElementById("color_area").style.backgroundColor = "pink";
+        }
+    </script>
+
+</body>
+
+</html>
